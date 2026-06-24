@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+:root {
+  --bg-primary: #0f1117;
+  --bg-secondary: #161b27;
+  --bg-card: #1a2035;
+  --bg-elevated: #1f2640;
+  --accent-amber: #f5a623;
+  --accent-amber-dim: rgba(245, 166, 35, 0.12);
+  --accent-indigo: #6366f1;
+  --accent-indigo-dim: rgba(99, 102, 241, 0.12);
+  --text-primary: #f7f4ef;
+  --text-secondary: #9ba3b8;
+  --text-muted: #5a6278;
+  --border-subtle: rgba(255, 255, 255, 0.06);
+  --border-medium: rgba(255, 255, 255, 0.1);
+  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.4);
+  --shadow-elevated: 0 8px 40px rgba(0, 0, 0, 0.6);
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background-color: #0f1117;
+  color: #f7f4ef;
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  overscroll-behavior: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+::selection {
+  background: rgba(245, 166, 35, 0.25);
+  color: #f7f4ef;
+}
+
+.line-clamp-1 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
